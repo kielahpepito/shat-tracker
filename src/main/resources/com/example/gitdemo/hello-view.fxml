@@ -2,16 +2,40 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: magenta;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.gitdemo.HelloController">
+<VBox alignment="CENTER" prefHeight="381.0" prefWidth="332.0" spacing="20.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kielah1.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Label text="Pandan G" textFill="WHITE" />
-   <TextField />
-   <PasswordField />
 
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <Label fx:id="welcomeText" text="Login" textFill="WHITE">
+        <font>
+            <Font name="Arial" size="29.0" />
+        </font></Label>
+    <Label text="Please enter your login and password" textFill="WHITE">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+        </font>
+    </Label>
+    <PasswordField promptText="Username or e-mail" />
+    <PasswordField promptText="Password" />
+    <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text=" Forgot password?" textFill="WHITE" translateX="100.0" translateY="-15.0" />
+    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="292.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Login" textFill="WHITE" translateY="-15.0">
+        <font>
+            <Font name="Arial" size="12.0" />
+        </font>
+    </Button>
+    <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="292.0" style="-fx-background-color: black;" text="or sign-in with Google" textFill="WHITE" translateY="-20.0">
+        <graphic>
+            <ImageView fitHeight="15.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../channels4_profile.jpg" />
+                </image>
+            </ImageView>
+        </graphic></Button>
+    <Label scaleZ="0.0" text="not a member yet?" textFill="WHITE" translateX="-5.0" />
+    <Label text="register" textFill="#e41a1a" translateX="70.0" translateY="-38.0" />
 </VBox>
